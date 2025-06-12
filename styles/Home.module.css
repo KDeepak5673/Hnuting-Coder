@@ -166,3 +166,20 @@ a.secondary {
     filter: invert();
   }
 }
+
+
+.mainnav ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  justify-content: center;
+}
+
+.mainnav ul li{
+  justify-content: center;
+  margin-top: 10px;
+  font-size: 14px;
+  line-height: 20px;
+}

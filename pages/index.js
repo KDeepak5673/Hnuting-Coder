@@ -23,11 +23,21 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Script src='/script.js' strategy="lazyOnload" >
-      </Script>
-      <div
-        className={`${styles.page} ${geistSans.variable} ${geistMono.variable}`}
-      >
+      {/* <Script src='/script.js' strategy="lazyOnload" >
+      </Script> */}
+
+      <nav className={styles.mainnav}>
+          <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Blog</li>
+            <li>Contact</li>
+            
+          </ul>
+        </nav>
+      <div className={`${styles.page} ${geistSans.variable} ${geistMono.variable}`}>
+
+        
         <main className={styles.main}>
           <h1>
             Hunting Coders
@@ -37,7 +47,32 @@ export default function Home() {
           <p className={styles.description}>
             A platform for developers to showcase their skills and connect with opportunities.
           </p>
+
+          <div className="blogs">
+            <h2>Popular blogs</h2>
+            <div className="blogItem">
+              <h3>How to learn JavaScript in 2022?</h3>
+              <p>JavaScript is a versatile language that can be used for both front-end and back-end development. </p>
+              <p>In 2022, the best way to learn JavaScript is through hands-on projects, online courses, and coding challenges.</p>
+
+            </div>
+            <div className="blogItem">
+              <h3>How to learn JavaScript in 2022?</h3>
+              <p>JavaScript is a versatile language that can be used for both front-end and back-end development. </p>
+              <p>In 2022, the best way to learn JavaScript is through hands-on projects, online courses, and coding challenges.</p>
+
+            </div>
+            <div className="blogItem">
+              <h3>How to learn JavaScript in 2022?</h3>
+              <p>JavaScript is a versatile language that can be used for both front-end and back-end development. </p>
+              <p>In 2022, the best way to learn JavaScript is through hands-on projects, online courses, and coding challenges.</p>
+
+            </div>
+            
+          </div>
         </main>
+
+
         
       </div>
     </>
