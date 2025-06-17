@@ -1,5 +1,4 @@
 import Head from "next/head";
-import Script from "next/script";
 import Image from "next/image";
 import { Geist, Geist_Mono } from "next/font/google";
 import styles from "@/styles/Home.module.css";
@@ -26,15 +25,7 @@ export default function Home() {
       {/* <Script src='/script.js' strategy="lazyOnload" >
       </Script> */}
 
-      <nav className={styles.mainnav}>
-          <ul>
-            <li>Home</li>
-            <li>About</li>
-            <li>Blog</li>
-            <li>Contact</li>
-            
-          </ul>
-        </nav>
+      
       <div className={`${styles.page} ${geistSans.variable} ${geistMono.variable}`}>
 
         
@@ -43,6 +34,7 @@ export default function Home() {
             Hunting Coders
           </h1>
           
+          <Image src= "/homepng.jpg" alt="Hunting Coders Logo" width={300} height={300} className={styles.logo} />
 
           <p className={styles.description}>
             A platform for developers to showcase their skills and connect with opportunities.

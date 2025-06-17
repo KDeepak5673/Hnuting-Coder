@@ -183,3 +183,7 @@ a.secondary {
   font-size: 14px;
   line-height: 20px;
 }
+
+.logo {
+  border-radius: 10px;
+}
